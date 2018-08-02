@@ -292,6 +292,11 @@ typedef EGLImageKHR (EGLAPIENTRYP PFNEGLCREATEDRMIMAGEMESAPROC) (EGLDisplay dpy,
 typedef EGLBoolean (EGLAPIENTRYP PFNEGLEXPORTDRMIMAGEMESAPROC) (EGLDisplay dpy, EGLImageKHR image, EGLint *name, EGLint *handle, EGLint *stride);
 #endif
 
+#ifndef EGL_MESA_platform_gbm
+#define EGL_MESA_platform_gbm 1
+#define EGL_PLATFORM_GBM_MESA             0x31D7
+#endif /* EGL_MESA_platform_gbm */
+
 #ifndef EGL_NV_post_sub_buffer
 #define EGL_NV_post_sub_buffer 1
 #define EGL_POST_SUB_BUFFER_SUPPORTED_NV	0x30BE
