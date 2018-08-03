@@ -27,7 +27,7 @@ extern "C" {
 
 #include <KHR/khrplatform.h>
 
-typedef struct wl_egl_window *NativeWindowType;
+typedef void *NativeWindowType;
 typedef void *NativePixmapType;
 typedef void *NativeDisplayType;
 
